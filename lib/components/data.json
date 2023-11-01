@@ -1,0 +1,62 @@
+{
+    "product0": {
+        "url": "assets/images/plant-0",
+        "name": "Plant 1",
+        "price": "12.99"
+    },
+    "product1": {
+        "url": "assets/images/plant-1",
+        "name": "Plant 2",
+        "price": "12.99"
+    },
+    "product2": {
+        "url": "assets/images/plant-2",
+        "name": "Plant 3",
+        "price": "12.99"
+    },
+    "product3": {
+        "url": "assets/images/plant-3",
+        "name": "Plant 4",
+        "price": "12.99"
+    },
+    "product4": {
+        "url": "assets/images/plant-4",
+        "name": "Plant 5",
+        "price": "12.99"
+    },
+    "product5": {
+        "url": "assets/images/plant-5",
+        "name": "Plant 6",
+        "price": "12.99"
+    },
+    "product6": {
+        "url": "assets/images/plant-6",
+        "name": "Plant 7",
+        "price": "12.99"
+    },
+    "product7": {
+        "url": "assets/images/plant-7",
+        "name": "Plant 8",
+        "price": "12.99"
+    },
+    "product8": {
+        "url": "assets/images/plant-8",
+        "name": "Plant 9",
+        "price": "12.99"
+    },
+    "product9": {
+        "url": "assets/images/plant-9",
+        "name": "Plant 10",
+        "price": "12.99"
+    },
+    "product10": {
+        "url": "assets/images/plant-10",
+        "name": "Plant 11",
+        "price": "12.99"
+    },
+    "product11": {
+        "url": "assets/images/plant-11",
+        "name": "Plant 12",
+        "price": "12.99"
+    }
+}
