@@ -39,44 +39,56 @@ class _PlantsState extends State<Plants> {
       body: SingleChildScrollView(
           child: Padding(
               padding: const EdgeInsets.all(20.0),
-              child: Row(
+              child: Column(
                 children: [
-                  Expanded(
-                    flex: 7,
-                    child: SizedBox(
-                      height: 45.0,
-                      child: TextField(
-                              textInputAction: TextInputAction.search,
-                              decoration: InputDecoration(
-                                hintText: "Search...",
-                                prefixIcon: Icon(Icons.search_rounded, color: Colors.grey[600]),
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: BorderSide(
-                                    width: 0,
-                                    style: BorderStyle.none,
+                  Row(
+                    children: [
+                      Expanded(
+                        flex: 7,
+                        child: SizedBox(
+                          height: 45.0,
+                          child: TextField(
+                                  textInputAction: TextInputAction.search,
+                                  decoration: InputDecoration(
+                                    hintText: "Search...",
+                                    prefixIcon: Icon(Icons.search_rounded, color: Colors.grey[600]),
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(10),
+                                      borderSide: BorderSide(
+                                        width: 0,
+                                        style: BorderStyle.none,
+                                      ),
+                                    ),
+                                    filled: true,
+                                    fillColor: Colors.white,
                                   ),
                                 ),
-                                filled: true,
-                                fillColor: Colors.white,
-                              ),
-                            ),
-                    ),
+                        ),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          height: 45.0,
+                          margin: EdgeInsets.only(left: 10.0),
+                          child: IconButton(
+                            icon: Icon(Icons.tune, color: Colors.black),
+                            onPressed: () {},
+                          ),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
-                  Expanded(
-                    flex: 1,
-                    child: Container(
-                      height: 45.0,
-                      margin: EdgeInsets.only(left: 10.0),
-                      child: IconButton(
-                        icon: Icon(Icons.tune, color: Colors.black),
-                        onPressed: () {},
-                      ),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
+                  GridView.count(
+                    crossAxisCount: 2,
+                    children: List.generate(100, (index) {
+                      return Card(
+                        
+                      );
+                    }),
                   ),
                 ],
               ),
