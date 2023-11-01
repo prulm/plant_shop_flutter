@@ -7,7 +7,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[50],
+      backgroundColor: Colors.grey[200],
       appBar: AppBar(
         elevation: 0.0,
         backgroundColor: Colors.transparent,
