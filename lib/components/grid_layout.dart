@@ -35,12 +35,12 @@ class GridLayout extends StatelessWidget {
               return Padding(
                 padding: const EdgeInsets.all(5.0),
                 child: GestureDetector(
-                  // onTap: () {
-                  //   Navigator.push(
-                  //       context,
-                  //       MaterialPageRoute(
-                  //           builder: (context) => Details(plant: plants[index])));
-                  // },
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Details(plant: plants[index])));
+                  },
                   child: Card(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),
