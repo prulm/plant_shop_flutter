@@ -12,63 +12,63 @@ class Plant {
 
 const allPlants = [
     Plant(
-        urlImage: "assets/images/plant-0",
-        name: "Plant 1",
+        urlImage: "assets/images/plant-0.png",
+        name: "Snake Plants",
         price: 12.99
         ),
     Plant(
-        urlImage: "assets/images/plant-1",
-        name: "Plant 2",
+        urlImage: "assets/images/plant-1.png",
+        name: "Lucky Jade Plant",
         price: 12.99
         ),
     Plant(
-        urlImage: "assets/images/plant-2",
-        name: "Plant 3",
+        urlImage: "assets/images/plant-2.png",
+        name: "Perperamia Plant",
         price: 12.99
         ),
     Plant(
-        urlImage: "assets/images/plant-3",
-        name: "Plant 4",
+        urlImage: "assets/images/plant-3.png",
+        name: "Fiddle-Leaf Fig. Plant",
         price: 12.99
         ),
     Plant(
-        urlImage: "assets/images/plant-4",
-        name: "Plant 5",
+        urlImage: "assets/images/plant-4.png",
+        name: "Perperamia Plant",
         price: 12.99
         ),
     Plant(
-        urlImage: "assets/images/plant-5",
-        name: "Plant 6",
+        urlImage: "assets/images/plant-5.png",
+        name: "Philodendron Plant",
         price: 12.99
         ),
     Plant(
-        urlImage: "assets/images/plant-6",
-        name: "Plant 7",
+        urlImage: "assets/images/plant-6.png",
+        name: "Swiss Cheese Plant",
         price: 12.99
         ),
     Plant(
-        urlImage: "assets/images/plant-7",
-        name: "Plant 8",
+        urlImage: "assets/images/plant-7.png",
+        name: "Fiddle-Leaf Fig. Plant",
         price: 12.99
         ),
     Plant(
-        urlImage: "assets/images/plant-8",
-        name: "Plant 9",
+        urlImage: "assets/images/plant-8.png",
+        name: "Dracaena Plant",
         price: 12.99
         ),
     Plant(
-        urlImage: "assets/images/plant-9",
-        name: "Plant 10",
+        urlImage: "assets/images/plant-9.png",
+        name: "Skimmia japonica Plant",
         price: 12.99
         ),
     Plant(
-        urlImage: "assets/images/plant-10",
-        name: "Plant 11",
+        urlImage: "assets/images/plant-10.png",
+        name: "Euonymus Plant",
         price: 12.99
         ),
     Plant(
-        urlImage: "assets/images/plant-11",
-        name: "Plant 12",
+        urlImage: "assets/images/plant-11.png",
+        name: "Pittosporum tenuifolium Plant",
         price: 12.99
         )
 ];
