@@ -30,11 +30,12 @@ class Details extends StatelessWidget {
         children: [
           Expanded(child: Image.asset(plant.urlImage)),
           Expanded(
-            child: Padding(
-              padding: const EdgeInsets.only(right: 150.0),
-              child: Column(
-                children: [
-                  Text(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 75.0),
+                  child: Text(
                     plant.name,
                     style: TextStyle(
                       fontSize: 24,
@@ -42,128 +43,132 @@ class Details extends StatelessWidget {
                       letterSpacing: 2.0,
                     ),
                   ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Text(
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 75.0),
+                  child: Text(
                     'Plants make your life minimal and happy\nlove the plants more and enjoy life.',
                     style: TextStyle(
                       color: Colors.grey[700],
                       fontSize: 12,
+                      letterSpacing: 1.0,
                     ),
-                  )
-                ],
-              ),
-            ),
-          ),
-          Container(
-            height: MediaQuery.of(context).size.height * .25,
-            width: MediaQuery.of(context).size.width * .8,
-            margin: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 0.0),
-            decoration: BoxDecoration(
-              color: Colors.green,
-              borderRadius: BorderRadius.circular(25.0),
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Column(
-                      children: [
-                        Icon(Icons.height, color: Colors.white),
-                        Text(
-                          'Height',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
-                        Text(
-                          '30cm - 40cm',
-                          style: TextStyle(
-                            fontSize: 10.0,
-                            color: Colors.white,
-                          ),
-                        )
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        Icon(Icons.device_thermostat, color: Colors.white),
-                        Text(
-                          'Temperature',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
-                        Text(
-                          '20°C to 25°C',
-                          style: TextStyle(
-                            fontSize: 10.0,
-                            color: Colors.white,
-                          ),
-                        )
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        Icon(Icons.compost, color: Colors.white),
-                        Text(
-                          'Pot',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
-                        Text(
-                          'Ciramic Pot',
-                          style: TextStyle(
-                            fontSize: 10.0,
-                            color: Colors.white,
-                          ),
-                        )
-                      ],
-                    ),
-                  ],
+                  ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Column(
-                      children: [
-                        Icon(Icons.compost, color: Colors.white),
-                        Text(
-                          'Total Price',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
+                Expanded(child: SizedBox()),
+                Container(
+                  height: MediaQuery.of(context).size.height * .3,
+                  width: MediaQuery.of(context).size.width,
+                  padding: EdgeInsets.symmetric(vertical: 20, horizontal: 75),
+                  decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.only(topLeft: Radius.circular(25), topRight: Radius.circular(25)),
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              Icon(Icons.height, color: Colors.white),
+                              Text(
+                                'Height',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Text(
+                                '30cm - 40cm',
+                                style: TextStyle(
+                                  fontSize: 10.0,
+                                  color: Colors.white,
+                                ),
+                              )
+                            ],
                           ),
-                        ),
-                        Text(
-                          '\$${plant.price}',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
+                          Column(
+                            children: [
+                              Icon(Icons.device_thermostat,
+                                  color: Colors.white),
+                              Text(
+                                'Temperature',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Text(
+                                '20°C to 25°C',
+                                style: TextStyle(
+                                  fontSize: 10.0,
+                                  color: Colors.white,
+                                ),
+                              )
+                            ],
                           ),
-                        )
-                      ],
-                    ),
-                    ElevatedButton(
-                      onPressed: () {},
-                      child: Text("Add to Cart"),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.green[800],
-                        padding: EdgeInsets.all(25.0),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10.0),
-                        ),
+                          Column(
+                            children: [
+                              Icon(Icons.compost, color: Colors.white),
+                              Text(
+                                'Pot',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Text(
+                                'Ciramic Pot',
+                                style: TextStyle(
+                                  fontSize: 10.0,
+                                  color: Colors.white,
+                                ),
+                              )
+                            ],
+                          ),
+                        ],
                       ),
-                    ),
-                  ],
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              Text(
+                                'Total Price',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Text(
+                                '\$${plant.price}',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              )
+                            ],
+                          ),
+                          ElevatedButton(
+                            onPressed: () {},
+                            child: Text("Add to Cart"),
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.green[800],
+                              padding: EdgeInsets.symmetric(vertical: 25.0, horizontal: 40),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),

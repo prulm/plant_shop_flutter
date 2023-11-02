@@ -39,7 +39,7 @@ class GridLayout extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => Details(plant: plants[index])));
+                            builder: (context) => Details(plant: plants[index - 1])));
                   },
                   child: Card(
                     shape: RoundedRectangleBorder(
